@@ -1,0 +1,15 @@
+.box{
+    margin-bottom: 5%;
+    background-color: #32383e;
+    border: 1px solid rgba(0,0,0,.6);
+    margin-right: 10%;
+    cursor: pointer;
+}
+
+.name{
+    position: relative;
+    display: block;
+    padding: 5px 10px;
+    color: #fff;
+    text-decoration: none;
+}

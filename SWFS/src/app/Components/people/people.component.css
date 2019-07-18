@@ -1,0 +1,13 @@
+.itemList{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.list{
+    max-width: 15%;
+    min-width: 15%;
+    
+}

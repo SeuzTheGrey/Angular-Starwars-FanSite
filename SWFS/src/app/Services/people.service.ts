@@ -1,12 +1,13 @@
 import { Injectable } from '@angular/core';
 import { Http, Response, RequestMethod, RequestOptions, Headers } from '@angular/http';
+import { Rest } from '../Classes/rest';
 
 @Injectable({
   providedIn: 'root'
 })
 export class PeopleService {
 
-  people: [];
+  people: Rest;
 
   constructor(private http: Http) { }
 
