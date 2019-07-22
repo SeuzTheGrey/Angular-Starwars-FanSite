@@ -2,7 +2,7 @@
     <div class="box">
         <ul *ngIf="people" class="itemList">
             <li *ngFor="let person of people" class="list">
-                <app-item [person]="person" [routerLink]="[ '', routeParam ]">name</app-item>
+                <app-item [person]="person">name</app-item>
             </li>
         </ul>
     </div>
