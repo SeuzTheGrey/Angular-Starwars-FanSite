@@ -11,6 +11,7 @@ import { PeopleComponent } from './Components/people/people.component';
 import { ItemComponent } from './Components/item/item.component';
 import { HomeComponent } from './Components/home/home.component';
 import { PersonComponent } from './Components/person/person.component';
+import { MenuComponent } from './Components/menu/menu.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { PersonComponent } from './Components/person/person.component';
     PeopleComponent,
     ItemComponent,
     HomeComponent,
-    PersonComponent
+    PersonComponent,
+    MenuComponent
   ],
   imports: [
     BrowserModule,

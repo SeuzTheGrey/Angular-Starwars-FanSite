@@ -1,0 +1,14 @@
+.box{
+    background-color: #32383e;
+    border: 1px solid rgba(0,0,0,.6);
+    cursor: pointer;
+    max-width: 24px;
+    max-height: 24px;
+    margin: 0 0 0 0;
+    position: fixed;
+    display: flex;
+    flex-direction: row-reverse;
+    left: 98.6%;
+    top: 17.72%;
+    
+}

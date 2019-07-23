@@ -8,4 +8,7 @@
 
 header{
     background-color: rgb(28, 30, 34);
+    position: relative;
+    top: -28px;
 }
+
