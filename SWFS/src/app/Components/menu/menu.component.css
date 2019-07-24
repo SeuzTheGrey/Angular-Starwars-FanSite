@@ -10,5 +10,12 @@
     flex-direction: row-reverse;
     left: 98.6%;
     top: 17.72%;
-    
+}
+
+.overlay{
+    position: fixed;
+    min-width: 100vw;
+    min-height: 100vh;
+    background-color: #32383e;
+    opacity: 90%;
 }
