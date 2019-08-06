@@ -11,6 +11,7 @@ import { ItemComponent } from './Components/item/item.component';
 import { HomeComponent } from './Components/home/home.component';
 import { PersonComponent } from './Components/person/person.component';
 import { MenuComponent } from './Components/menu/menu.component';
+import { PlanetsComponent } from './planets/planets.component';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { MenuComponent } from './Components/menu/menu.component';
     ItemComponent,
     HomeComponent,
     PersonComponent,
-    MenuComponent
+    MenuComponent,
+    PlanetsComponent
   ],
   imports: [
     BrowserModule,
