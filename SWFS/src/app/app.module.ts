@@ -12,6 +12,7 @@ import { HomeComponent } from './Components/home/home.component';
 import { PersonComponent } from './Components/person/person.component';
 import { MenuComponent } from './Components/menu/menu.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,

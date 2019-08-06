@@ -12,11 +12,24 @@ export class PeopleComponent implements OnInit {
 
   getRequest: Rest;
   people: People[];
+  nextPage?: string;
+  previousPage?: string;
   constructor(private peopleService: PeopleService) { }
 
   async ngOnInit() {
     this.getRequest = await this.peopleService.getPeople();
     this.people = this.getRequest.results;
+    this.nextPage = this.getRequest.next;
+    this.previousPage = this.getRequest.previous;
+  }
+
+  async getNextPage() {
+    this.getRequest = await this.peopleService.getNextPage(this.nextPage);
+    this.getRequest.results.forEach(element => {
+      this.people.push(element);
+    });
+    this.nextPage = this.getRequest.next;
+    this.previousPage = this.getRequest.previous;
   }
 
 }

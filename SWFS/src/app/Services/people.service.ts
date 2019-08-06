@@ -15,6 +15,10 @@ export class PeopleService {
 
   }
 
+  async getNextPage(nextPageURL: string): Promise<Rest> {
+    return this.httpClient.get<Rest>(nextPageURL).toPromise();
+  }
+
 
   // async getPeople(): Promise<Rest> {
   //   console.log(this.people);
