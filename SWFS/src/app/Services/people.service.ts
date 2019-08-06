@@ -1,20 +1,25 @@
 import { Injectable } from '@angular/core';
-import { Http, Response, RequestMethod, RequestOptions, Headers } from '@angular/http';
 import { Rest } from '../Classes/rest';
+import { HttpClient } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
 })
 export class PeopleService {
+  
+  constructor(private httpClient: HttpClient) { }
 
-  people: Rest;
+  async getPeople(): Promise<Rest> {
 
-  constructor(private http: Http) { }
+    return this.httpClient.get<Rest>('https://swapi.co/api/people').toPromise();
 
-  async getPeople(): Promise<any> {
-    console.log(this.people);
-    const get = await this.http.get('https://swapi.co/api/people').toPromise();
-    this.people = get.json();
-    return this.people;
   }
+
+
+  // async getPeople(): Promise<Rest> {
+  //   console.log(this.people);
+  //   const get = await this.http.get('https://swapi.co/api/people').toPromise();
+  //   this.people = get.json();
+  //   return this.people;
+  // }
 }
