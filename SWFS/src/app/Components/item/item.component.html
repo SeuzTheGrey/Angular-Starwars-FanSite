@@ -1,3 +1,6 @@
- <div class="box">
+ <div class="box" *ngIf="person">
     <p class="name" mat-raised-button (click)="openDialog()">{{person.name}}</p>
+</div> 
+<div class="box" *ngIf="planet">
+    <p class="name" mat-raised-button (click)="openDialog()">{{planet.name}}</p>
 </div> 

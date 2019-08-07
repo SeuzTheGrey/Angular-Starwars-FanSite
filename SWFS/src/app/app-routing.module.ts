@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { PeopleComponent } from './Components/people/people.component';
 import { HomeComponent } from './Components/home/home.component';
+import { PlanetsComponent } from './planets/planets.component';
 
 const routes: Routes = [
   {
@@ -14,6 +15,11 @@ const routes: Routes = [
     component: PeopleComponent,
     pathMatch: 'full'
   },
+  {
+    path: 'planets',
+    component: PlanetsComponent,
+    pathMatch: 'full'
+  }
 ];
 
 @NgModule({

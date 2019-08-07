@@ -12,6 +12,7 @@ import { HomeComponent } from './Components/home/home.component';
 import { PersonComponent } from './Components/person/person.component';
 import { MenuComponent } from './Components/menu/menu.component';
 import { PlanetsComponent } from './planets/planets.component';
+import { PlanetComponent } from './planet/planet.component';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { PlanetsComponent } from './planets/planets.component';
     HomeComponent,
     PersonComponent,
     MenuComponent,
-    PlanetsComponent
+    PlanetsComponent,
+    PlanetComponent
   ],
   imports: [
     BrowserModule,
@@ -33,7 +35,8 @@ import { PlanetsComponent } from './planets/planets.component';
   ],
   entryComponents: [
     ItemComponent,
-    PersonComponent
+    PersonComponent,
+    PlanetComponent
     ],
   providers: [],
   bootstrap: [AppComponent]
