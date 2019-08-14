@@ -9,7 +9,7 @@ export class VehiclesService {
 
   constructor(private httpClient: HttpClient) { }
 
-  async getPlanets(): Promise<Rest> {
+  async getVehicles(): Promise<Rest> {
 
     return this.httpClient.get<Rest>('https://swapi.co/api/vehicles').toPromise();
 

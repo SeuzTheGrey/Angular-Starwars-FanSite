@@ -9,7 +9,7 @@ export class StarshipsService {
 
   constructor(private httpClient: HttpClient) { }
 
-  async getPlanets(): Promise<Rest> {
+  async getStarships(): Promise<Rest> {
 
     return this.httpClient.get<Rest>('https://swapi.co/api/starships').toPromise();
 

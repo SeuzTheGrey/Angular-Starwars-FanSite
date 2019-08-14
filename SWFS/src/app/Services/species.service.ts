@@ -9,7 +9,7 @@ export class SpeciesService {
 
   constructor(private httpClient: HttpClient) { }
 
-  async getPlanets(): Promise<Rest> {
+  async getSpecies(): Promise<Rest> {
 
     return this.httpClient.get<Rest>('https://swapi.co/api/species').toPromise();
 

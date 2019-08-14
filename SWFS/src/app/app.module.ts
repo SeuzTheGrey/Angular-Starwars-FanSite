@@ -13,6 +13,14 @@ import { PersonComponent } from './Components/person/person.component';
 import { MenuComponent } from './Components/menu/menu.component';
 import { PlanetsComponent } from './planets/planets.component';
 import { PlanetComponent } from './planet/planet.component';
+import { FilmsComponent } from './films/films.component';
+import { FilmComponent } from './film/film.component';
+import { SpeciesComponent } from './species/species.component';
+import { SpeciesSingleComponent } from './species-single/species-single.component';
+import { StarshipsComponent } from './starships/starships.component';
+import { StarshipComponent } from './starship/starship.component';
+import { VehiclesComponent } from './vehicles/vehicles.component';
+import { VehicleComponent } from './vehicle/vehicle.component';
 
 
 @NgModule({
@@ -24,7 +32,15 @@ import { PlanetComponent } from './planet/planet.component';
     PersonComponent,
     MenuComponent,
     PlanetsComponent,
-    PlanetComponent
+    PlanetComponent,
+    FilmsComponent,
+    FilmComponent,
+    SpeciesComponent,
+    SpeciesSingleComponent,
+    StarshipsComponent,
+    StarshipComponent,
+    VehiclesComponent,
+    VehicleComponent
   ],
   imports: [
     BrowserModule,
@@ -36,7 +52,11 @@ import { PlanetComponent } from './planet/planet.component';
   entryComponents: [
     ItemComponent,
     PersonComponent,
-    PlanetComponent
+    PlanetComponent,
+    VehicleComponent,
+    StarshipComponent,
+    SpeciesSingleComponent,
+    FilmComponent
     ],
   providers: [],
   bootstrap: [AppComponent]

@@ -9,7 +9,7 @@ export class FilmsService {
 
   constructor(private httpClient: HttpClient) { }
 
-  async getPlanets(): Promise<Rest> {
+  async getFilms(): Promise<Rest> {
 
     return this.httpClient.get<Rest>('https://swapi.co/api/films').toPromise();
 
