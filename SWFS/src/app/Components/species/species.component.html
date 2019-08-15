@@ -1,0 +1,10 @@
+<div class="container">
+    <div class="box">
+        <ul *ngIf="species" class="itemList">
+            <li *ngFor="let species of species" class="list">
+                <app-item [species]="species"></app-item>
+            </li>
+        </ul>
+        <button (click)="getNextPage()">Load More</button>
+    </div>
+</div>

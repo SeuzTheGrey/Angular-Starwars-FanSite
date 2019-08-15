@@ -11,16 +11,16 @@ import { ItemComponent } from './Components/item/item.component';
 import { HomeComponent } from './Components/home/home.component';
 import { PersonComponent } from './Components/person/person.component';
 import { MenuComponent } from './Components/menu/menu.component';
-import { PlanetsComponent } from './planets/planets.component';
-import { PlanetComponent } from './planet/planet.component';
-import { FilmsComponent } from './films/films.component';
-import { FilmComponent } from './film/film.component';
-import { SpeciesComponent } from './species/species.component';
-import { SpeciesSingleComponent } from './species-single/species-single.component';
-import { StarshipsComponent } from './starships/starships.component';
-import { StarshipComponent } from './starship/starship.component';
-import { VehiclesComponent } from './vehicles/vehicles.component';
-import { VehicleComponent } from './vehicle/vehicle.component';
+import { PlanetsComponent } from './Components/planets/planets.component';
+import { PlanetComponent } from './Components/planet/planet.component';
+import { FilmsComponent } from './Components/films/films.component';
+import { FilmComponent } from './Components/film/film.component';
+import { SpeciesComponent } from './Components/species/species.component';
+import { SpeciesSingleComponent } from './Components/species-single/species-single.component';
+import { StarshipsComponent } from './Components/starships/starships.component';
+import { StarshipComponent } from './Components/starship/starship.component';
+import { VehiclesComponent } from './Components/vehicles/vehicles.component';
+import { VehicleComponent } from './Components/vehicle/vehicle.component';
 
 
 @NgModule({

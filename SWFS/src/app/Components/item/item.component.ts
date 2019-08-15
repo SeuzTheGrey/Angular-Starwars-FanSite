@@ -3,15 +3,15 @@ import { People } from '../../Classes/people';
 import { PersonComponent } from '../person/person.component';
 import { MatDialog } from '@angular/material/dialog';
 import { Planets } from 'src/app/Classes/planets';
-import { PlanetComponent } from 'src/app/planet/planet.component';
+import { PlanetComponent } from 'src/app/Components/planet/planet.component';
 import { Films } from 'src/app/Classes/films';
 import { Species } from 'src/app/Classes/species';
 import { Starships } from 'src/app/Classes/starships';
 import { Vehicles } from 'src/app/Classes/vehicles';
-import { FilmComponent } from 'src/app/film/film.component';
-import { SpeciesSingleComponent } from 'src/app/species-single/species-single.component';
-import { StarshipComponent } from 'src/app/starship/starship.component';
-import { VehicleComponent } from 'src/app/vehicle/vehicle.component';
+import { FilmComponent } from 'src/app/Components/film/film.component';
+import { SpeciesSingleComponent } from 'src/app/Components/species-single/species-single.component';
+import { StarshipComponent } from 'src/app/Components/starship/starship.component';
+import { VehicleComponent } from 'src/app/Components/vehicle/vehicle.component';
 
 
 @Component({

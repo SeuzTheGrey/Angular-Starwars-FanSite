@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { Films } from '../Classes/films';
-import { Rest } from '../Classes/rest';
-import { FilmsService } from '../Services/films.service';
+import { Rest } from 'src/app/Classes/rest';
+import { Films } from 'src/app/Classes/films';
+import { FilmsService } from 'src/app/Services/films.service';
+
 
 @Component({
   selector: 'app-films',

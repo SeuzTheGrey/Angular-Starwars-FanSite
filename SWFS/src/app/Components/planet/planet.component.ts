@@ -1,6 +1,6 @@
 import { Component, OnInit, Inject } from '@angular/core';
-import { Planets } from '../Classes/planets';
 import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material';
+import { Planets } from 'src/app/Classes/planets';
 
 @Component({
   selector: 'app-planet',

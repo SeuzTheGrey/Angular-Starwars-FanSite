@@ -1,6 +1,7 @@
 import { Component, OnInit, Inject } from '@angular/core';
 import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material';
-import { Films } from '../Classes/films';
+import { Films } from 'src/app/Classes/films';
+
 
 @Component({
   selector: 'app-film',

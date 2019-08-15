@@ -2,8 +2,9 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { PeopleComponent } from './Components/people/people.component';
 import { HomeComponent } from './Components/home/home.component';
-import { PlanetsComponent } from './planets/planets.component';
-import { FilmsComponent } from './films/films.component';
+import { PlanetsComponent } from './Components/planets/planets.component';
+import { FilmsComponent } from './Components/films/films.component';
+import { SpeciesComponent } from './Components/species/species.component';
 
 const routes: Routes = [
   {
@@ -24,6 +25,11 @@ const routes: Routes = [
   {
     path: 'films',
     component: FilmsComponent,
+    pathMatch: 'full'
+  },
+  {
+    path: 'species',
+    component: SpeciesComponent,
     pathMatch: 'full'
   }
 ];
