@@ -1,1 +1,10 @@
-<p>starships works!</p>
+<div class="container">
+    <div class="box">
+        <ul *ngIf="starships" class="itemList">
+            <li *ngFor="let starship of starships" class="list">
+                <app-item [starships]="starship"></app-item>
+            </li>
+        </ul>
+        <button (click)="getNextPage()">Load More</button>
+    </div>
+</div>

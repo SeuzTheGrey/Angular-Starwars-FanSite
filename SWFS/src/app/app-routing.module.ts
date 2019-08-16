@@ -5,6 +5,7 @@ import { HomeComponent } from './Components/home/home.component';
 import { PlanetsComponent } from './Components/planets/planets.component';
 import { FilmsComponent } from './Components/films/films.component';
 import { SpeciesComponent } from './Components/species/species.component';
+import { StarshipsComponent } from './Components/starships/starships.component';
 
 const routes: Routes = [
   {
@@ -30,6 +31,11 @@ const routes: Routes = [
   {
     path: 'species',
     component: SpeciesComponent,
+    pathMatch: 'full'
+  },
+  {
+    path: 'starships',
+    component: StarshipsComponent,
     pathMatch: 'full'
   }
 ];

@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Inject } from '@angular/core';
+import { Starships } from 'src/app/Classes/starships';
+import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material';
 
 @Component({
   selector: 'app-starship',
@@ -7,9 +9,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class StarshipComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    public dialogRef: MatDialogRef<StarshipComponent>,
+    @Inject(MAT_DIALOG_DATA) public starships: Starships
+    ) { }
 
   ngOnInit() {
   }
+
+  onNoClick(): void {
+    this.dialogRef.close();
+  }
+
 
 }
